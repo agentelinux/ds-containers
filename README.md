@@ -1,4 +1,6 @@
-An easy way to get started with data science, using Docker.  Containers that come preinstalled with ipython notebook and key packages in the scientific stack. (include Google Cloud Plataform API lib for python)
+An easy way to get started with data science, using Docker.  Containers that come preinstalled with ipython notebook and key packages in the scientific stack. 
+
+* Include Google Cloud Plataform API lib for python.
 
 ## Getting started
 
