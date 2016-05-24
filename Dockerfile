@@ -12,12 +12,13 @@ ADD apt-packages.txt /tmp/apt-packages.txt
 RUN xargs -a /tmp/apt-packages.txt apt-get install -y
 
 RUN pip install virtualenv
-RUN /usr/local/bin/virtualenv /opt/ds --distribute --python=/usr/bin/python3
+RUN /usr/local/bin/virtualenv /opt/ds --distribute
 
 ADD /requirements/ /tmp/requirements
 
 RUN /opt/ds/bin/pip install -r /tmp/requirements/pre-requirements.txt
 RUN /opt/ds/bin/pip install -r /tmp/requirements/requirements.txt
+RUN /opt/ds/bin/pip install -r /tmp/requirements/additional-reqs.txt
 
 RUN useradd --create-home --home-dir /home/ds --shell /bin/bash ds
 RUN chown -R ds /opt/ds
