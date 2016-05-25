@@ -2,7 +2,6 @@ An easy way to get started with data science, using Docker.  Containers that com
 
 * Include Graphlab Create lib for python.
 
-
 ## Getting started
 
 * Run `sh build_container.sh python2` (switch `python2` for another container to build that one`).
