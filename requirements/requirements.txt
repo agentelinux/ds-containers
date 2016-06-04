@@ -15,3 +15,10 @@ theano
 requests
 beautifulsoup4
 google-api-python-client
+django-recommends==0.3.1
+bottleneck
+requests
+pyyaml
+boto
+pattern
+cyhunspell
